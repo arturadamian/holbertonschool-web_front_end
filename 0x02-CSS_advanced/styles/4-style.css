@@ -12,7 +12,7 @@ html {
     --text-color: var(--color-black);
 }
 body {
-    color: #161616;
+    color: var(--text-color);
     font-family: var(--font-family-base);
 }
 
