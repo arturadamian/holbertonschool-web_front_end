@@ -9,7 +9,7 @@ html {
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
 }
-body {
+body, a {
     color: var(--text-color);
 }
 .visually-hidden {
