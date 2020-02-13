@@ -85,6 +85,7 @@ a:active {
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
+    border: var(--button-border);
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
@@ -183,17 +184,17 @@ ul.row {
     color: var(--text-color);
 }
 .row::after {
-    content: normal;
+    content: "";
     display: table;
     clear: both;
 }
 .social-link {
     display: block;
 }
-.social-link cvg {
-    color: var(--text-color);
+.social-link > svg {
+    fill: var(--text-color);
 }
-.card-services.card-title {
+.card-services .card-title {
     margin: 0;
 }
 .card-services a {
@@ -206,25 +207,21 @@ ul.row {
     background-color: var(--color-primary);
     text-decoration: none;
 }
-.card-testimonial {
-    text-align: center;
-}
-.card-testimonial.card-avatar {
+.card-testimonial .card-avatar {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
 }
-.card-testimonial.card-quote cite {
+.card-testimonial .card-quote cite {
     display: block;
     padding-top: 1rem;
     color: var(--color-primary);
 }
-
-[class*="col-"] {
+[class*='col-'] {
     float: left;
     padding: 0.5rem;
 }
-[data-section-theme=“dark”] {
+[data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
