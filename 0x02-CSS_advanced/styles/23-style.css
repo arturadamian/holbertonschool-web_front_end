@@ -158,20 +158,13 @@ ul.row {
 .footer ul {
     text-align: right;
 }
-.footer-address {
-    color: var(--text-color);
-}
+
 .row::after {
     content: normal;
     display: table;
     clear: both;
 }
-.social-link {
-    display: block;
-}
-.social-link > cvg {
-    fill: var(--text-color);
-}
+
 [class*="col-"] {
     float: left;
     padding: 0.5rem;
@@ -181,4 +174,12 @@ ul.row {
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
 }
-
+.footer-address {
+    color: var(--text-color);
+}
+.social-link {
+    display: block;
+}
+.social-link > svg {
+    fill: var(--text-color);
+}
