@@ -251,7 +251,7 @@ ul.row {
     color: var(--color-primary);
 }
 .card-work .card-outer {
-    height: 30rem;
+    position: relative;
     overflow: hidden;
 }
 .card-work .card-image {
