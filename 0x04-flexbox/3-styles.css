@@ -381,7 +381,7 @@
       flex-direction: row-reverse;
   }
   /* Section SERVICES ============================= */
-  .section-service .row {
+  .section-services .row {
       flex-wrap: wrap;
   }
   /*** 4. CARD ***/
