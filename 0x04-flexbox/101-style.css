@@ -1,0 +1,43 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .box {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+  }
+  
+  .box1 {
+    background-color: green;
+    height: 20vh;
+    width: 20vh;
+    font-size: 5vh;
+  }
+  .box2 {
+    background-color: blue;
+    height: 30vh;
+    width: 30vh;
+    font-size: 10vh;
+  }
+  .box3 {
+    background-color: grey;
+    height: 50vh;
+    width: 50vh;
+    font-size: 15vh;
+    align-self: flex-end;
+    
+  }
+  .box4 {
+    background-color: purple;
+    height: 30vh;
+    width: 30vh;
+    font-size: 10vh;
+  }
+  .box5 {
+    background-color: orange;
+    height: 20vh;
+    width: 20vh;
+    font-size: 5vh;
+  }
