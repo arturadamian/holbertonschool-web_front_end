@@ -1,0 +1,38 @@
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+li {
+   
+    border-radius: 25px;
+    border-style: solid;
+    text-align: center;
+    list-style-type: none;
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 10vh;
+    height: 83vh;
+    background-color:  #f7f7f7;
+}
+span {
+ 
+    display: block;
+    width: 50vh;
+    height: 68vh;
+    background: url(./images/d416199ca6ecdbd0f8a3.png) 0 0;
+  }
+.i-html {
+   
+    background-position: 0vh 0vh;
+}
+.i-css {
+  
+    background-position: -53vh 0;
+}
+
+.i-js {
+
+    background-position: -106vh 0;
+}
