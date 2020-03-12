@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+a::after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: -webkit-link;
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
