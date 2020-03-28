@@ -19,18 +19,18 @@ For this project, you will use **Bootstrap 4.4** and only the *CSS styling part*
 
 #### *Build this responsive web page using Bootstrap Grid system:*
 
-![grid](https://intranet-projects-files.s3.amazonaws.com/holbertonschool-webstack/623/1-index.gif)
+![grid](images/grid.gif)
 
 #### *Design a table of chemical elements:*
 
-![Table](https://intranet-projects-files.s3.amazonaws.com/holbertonschool-webstack/623/2-index.gif)
+![Table](images/table.gif)
 
 #### *Learn how to use cards:*
 
-![Cards](https://intranet-projects-files.s3.amazonaws.com/holbertonschool-webstack/623/3-index.gif)
+![Cards](images/card.gif)
 
 #### *How to create the custom stylesheet to match exsisted bootstrap layout:*
 
-![css](https://intranet-projects-files.s3.amazonaws.com/holbertonschool-webstack/623/6-index.gif)
+![css](images/css.gif)
 
 #### *and many more...*
