@@ -1,0 +1,72 @@
+/* SUMMARY
+1. HEADER/FOOTER
+2. BUTTONS
+3. CARDS
+4. LINKS
+*/
+
+
+/* Variables
+     ============================== */
+
+:root {
+    --main-color: #E0003C;
+    --button-active-color: #BC1340;
+    --text-muted-color: #8C8C8C;
+    --text-active-color: white;
+    
+    --border-radius: 1rem;
+}
+
+/* Header/Footer
+     ============================== */
+
+    .border-bottom {
+        border-bottom-color: var(--main-color) !important;
+    }
+    .border-top {
+        border-top-color: var(--main-color) !important;
+    }
+
+/* Buttons
+     ============================== */
+     
+[class*="btn"]:hover,
+[class*="btn"]:active,
+[class*="btn"]:focus {
+    background-color: var(--button-active-color);
+    color: var(--text-active-color);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: var(--text-active-color);
+}
+.btn-outline-primary {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Cards
+     ============================== */
+.card {
+    border-color: var(--main-color);
+    border-radius: var(--border-radius);
+}
+.card .card-header {
+    background-color: var(--main-color);
+    color: var(--text-active-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+/* Links
+     ============================== */
+     
+a[class*="text-"]:hover,
+a[class*="text-"]:active {
+    color: var(--main-color) !important;
+}
+.text-muted {
+    color: var(--text-muted-color) !important;
+}
+
