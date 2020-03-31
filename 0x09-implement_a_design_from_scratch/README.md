@@ -6,7 +6,7 @@ We won’t have a lot of instruction, you are free to implement it the way that 
 
 Here is the design of the page that we get in Figma:
 
-![Figma](/readme-img/figma-design.png)
+![Figma](readme-img/figma-design.png)
 
 Building a web page the right way, is not easy - expect if you put in place strong foundations:
 
@@ -32,10 +32,10 @@ We are free to add any animations and/or constraints on fields.
 
 ## When we are done, here is the result
 
-![Desctop Website](/readme-img/desctop.gif)
+![Desctop Website](readme-img/desctop.gif)
 
 ## And the mobile version shoukd look like this one)
 
-![Mobile Website](/readme-img/mobile.gif)
+![Mobile Website](readme-img/mobile.gif)
 
 And you are done!.. Not really - there are some advanced tasks and I haven't had enough time to make my *transform: scale()* work in the **Header** so I will inform you of any developments/progress..
