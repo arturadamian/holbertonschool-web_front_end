@@ -1,10 +1,10 @@
 # Implement a design from scratch
 
-In this project, we will implement from scratch, without any library, a web page. We will use all HTML/CSS/Accessibility/Responsive design knowledges that we have learned previously.
+In this project, you will implement from scratch, without any library, a web page. We will use all HTML/CSS/Accessibility/Responsive design knowledges that you have learned previously.
 
 We won’t have a lot of instruction, you are free to implement it the way that you want - the objective is simple: Have a fully functional web page that looks the same as the designer file.
 
-Here is the design of the page that we get in Figma:
+Here is the design of the page that you get in Figma:
 
 ![Figma](readme-img/figma-design.png)
 
@@ -18,7 +18,7 @@ Building a web page the right way, is not easy - expect if you put in place stro
 
 Last advice: I always start to build a web page from outside to inside and from top to bottom.
 
-Now, your turn!
+## Now, your turn!
 
 1. For this first task: **create the header/hero piece**
 2. For this second task:  **create the “What we do…” section**
@@ -30,12 +30,13 @@ Now you can reuse components form the previous task!
 We are free to add any animations and/or constraints on fields.
 5. Last piece of the page… the Footer!
 
-## When we are done, here is the result
+### When you are done, here is the result
 
 ![Desctop Website](readme-img/desctop.gif)
 
-## And the mobile version shoukd look like this one)
+### And the mobile version shoukd look like this one)
 
 ![Mobile Website](readme-img/mobile.gif)
 
-And you are done!.. Not really - there are some advanced tasks and I haven't had enough time to make my *transform: scale()* work in the **Header** so I will inform you of any developments/progress..
+And you are done!
+..*Not really - there are some advanced tasks so I will inform you of any developments/progress..*
