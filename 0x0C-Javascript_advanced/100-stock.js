@@ -11,6 +11,11 @@ let processOrder = (itemName, callbackPayment, callbackError) => {
     console.log(`Verifying the stock of ${itemName}`);
     (stock[itemName] > 0) ? processPayment(itemName) : processError(itemName);
 }
-let itemName = prompt("Please enter the item you would like to purchase (Macbook, iPhone");
-itemName.toLowerCase
-!(itemName in stock) ? console.log(`Sorry, we dont have ${itemName}`) : processOrder(itemName);
+let item = prompt("Please enter the item you would like to purchase (Macbook, iPhone");
+if (!(item)) {
+    console.log(`Please, enter the item`)
+}
+else {
+    itemName = item.toLowerCase()
+    !(itemName in stock) ? console.log(`Sorry, we dont have ${itemName}`) : processOrder(itemName)
+}
