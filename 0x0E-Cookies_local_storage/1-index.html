@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hello</title>
+
+</head>
+<body>
+    <div>
+        <h1>Login to the website</h1>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button id="login" type="button" onclick="setCookies()">Log me in</button>
+    </div>
+    <div>
+        <h1>Cookies</h1>
+        <button id="show" type="button" onclick="showCookies()">Show the cookies</button>
+    </div>
+    <script>
+        // function delete_cookie( name ) {
+        //     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        // }
+        let setCookies = () => {
+            // delete_cookie(document.cookie)
+            console.log(document.cookie)
+            document.cookie = "firstname=" + document.getElementById("firstname").value
+            document.cookie = "email=" + document.getElementById("email").value
+            document.cookie = 'path=/'
+            document.cookie = 'max-age=864000'
+        }
+        let showCookies = () => { 
+            let show = document.createElement("p")
+            show.innerHTML = "Cookies: " + document.cookie
+            document.body.appendChild(show)
+        }
+    </script>
+</body>
+</html>

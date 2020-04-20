@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hello</title>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+</head>
+<body>
+    <div id="form">
+        <h1>Login to the website</h1>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button id="login" type="button" onclick="setCookies()">Log me in</button>
+    </div>
+    <script>
+            
+        let setCookies = () => {
+            Cookies.set("firstname", document.getElementById("firstname").value, { expires: 10, path: '/'})
+            Cookies.set("email", document.getElementById("email").value, { expires: 10, path: '/'})
+            
+            showWelcomeMessageOrForm()
+        }
+        let showForm = () => {
+            document.getElementById("form").style.display = "block"  
+        }
+        let hideForm = () => {       
+            document.getElementById("form").style.display = "none"
+        }
+        let deleteCookiesAndShowForm = () => {        
+            let welcomeX = document.getElementById("welcome")
+            welcomeX.remove()
+                        
+            Cookies.remove('firstname', {path: '/'})
+            Cookies.remove('email', {path: '/'})
+
+            document.getElementById('email').value = ''
+            document.getElementById('firstname').value = ''
+            
+            showForm()
+        }
+        let showWelcomeMessageOrForm = () => {
+            let name = Cookies.get('firstname')
+            let mail = Cookies.get('email')
+
+            if (name && mail) {
+                hideForm()
+                let hello = document.createElement("h1")
+                hello.setAttribute("id", "welcome")
+                hello.innerHTML = 'Welcome: ' + name
+        
+                let out = document.createElement("a")
+                out.innerHTML = '(logout)'
+                out.setAttribute("onclick", "deleteCookiesAndShowForm()")
+                out.style.fontWeight = "normal"
+                out.style.fontStyle = "italic"
+                out.style.marginLeft = "10px"
+                
+                
+                hello.appendChild(out)
+                document.body.appendChild(hello)
+                
+                document.getElementById("welcome").style.display = "block"
+            }
+            else showForm()
+        }
+    </script>
+</body>
+</html>

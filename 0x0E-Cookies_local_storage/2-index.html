@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hello</title>
+
+</head>
+<body>
+    <div>
+        <h1>Login to the website</h1>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button id="login" type="button" onclick="setCookies()">Log me in</button>
+    </div>
+    <div>
+        <h1>Cookies</h1>
+        <button id="show" type="button" onclick="showCookies()">Show the cookies</button>
+    </div>
+    <script>
+        let setCookies = () => {
+            document.cookie = "firstname=" + document.getElementById("firstname").value
+            document.cookie = "email=" + document.getElementById("email").value
+            document.cookie = 'path=/'
+            document.cookie = 'max-age=864000'
+        }
+        let showCookies = () => { 
+            let show = document.createElement("p")
+            show.innerHTML = "Email: " + getCookie('email') + " - "
+                        + "Firstname: " + getCookie('firstname')
+            document.body.appendChild(show)
+        }
+        let getCookie = (name) => {
+            let arr = document.cookie.split("; ")
+            for (let i = arr.length - 1; i >= 0; --i) {
+                let keyVal = arr[i].split('=')
+                if (keyVal[0] === name) {
+                    return keyVal[1].toUpperCase();
+                    break;
+                }
+            }
+            return ""
+        }
+    </script>
+</body>
+</html>

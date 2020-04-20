@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>hello</title>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+</head>
+<body>
+    <script>
+        function lsTest(){
+        var test = 'test';
+        try {
+            localStorage.setItem(test, test);
+            localStorage.removeItem(test);
+            return true;
+        } catch(e) {
+            return false;
+        }
+        }
+
+        if(lsTest() != true) {
+            alert("Sorry, your browser does not support Web storage. Try again with a better one");
+        }
+        let availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+        console.log(availableItems)
+        
+        let addItemToCart = (item) => {
+            console.log(item)
+            localStorage.setItem(item, true);
+        }
+        let createStore = () => {
+            let lst = document.createElement("ul");
+            document.body.appendChild(lst);
+            for (let item of availableItems) {
+                console.log(item)
+                let it = document.createElement('li');
+                it.innerHTML = item;
+                it.setAttribute(`onclick`, `addItemToCart('${item}')`);
+                lst.appendChild(it);
+            }
+        }
+        let displayPort = () => {
+            console.log(localStorage.length);
+            console.log(localStorage);
+            if (localStorage.length === 0) return;
+            let p = document.createElement("p");
+            p.innerHTML = 'You previously had ' + localStorage.length + ' items in your cart';
+            document.body.appendChild(p);
+        }
+        createStore()
+        displayPort()
+        
+       
+    </script>
+</body>
+</html>
